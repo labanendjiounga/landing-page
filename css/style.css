@@ -22,13 +22,18 @@ body {
   align-items: stretch;
 }
 
-.header {
+.header,
+.hero-section,
+.footer {
   background-color: #1F2937;
+}
+
+.header {
   flex-shrink: 0;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 16px 200px 0;
+  padding: 16px 200px 16px;
   gap: 16px;
 }
 
@@ -52,11 +57,10 @@ a {
 
 .hero-section {
   flex: 1;
-  background-color: #1F2937;
   display: flex;
   justify-content: space-between;
   gap: 16px;
-  padding: 62px 200px 62px;
+  padding: 62px 200px 112px;
 }
 
 .left {
@@ -64,7 +68,6 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: baseline;
-  gap: 8px;
 }
 
 h1 {
@@ -78,13 +81,18 @@ h1 {
   color: #E5E7EB;
 }
 
+#top-button {
+  margin-top: 12px;
+}
+
 .button {
   flex-shrink: 0;
-  padding: 8px 20px;
+  padding: 8px 32px;
   border-radius: 8px;
   border: 2px solid #3882F6;
   background-color: #3882F6;
   color: #F9FAF8;
+  font-weight: 700;
 }
 
 .right {
@@ -96,6 +104,7 @@ h1 {
   background-color: darkgray;
   color: #F9FAF8;
   font-size: 18px;
+  padding-top: 24px;
 }
 
 .info-section {
@@ -167,7 +176,6 @@ blockquote {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-width: 300px;
   border-radius: 12px;
   padding: 24px;
   gap: 16px;
@@ -187,7 +195,6 @@ blockquote {
 }
 
 .footer {
-  background-color: #1F2937;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
